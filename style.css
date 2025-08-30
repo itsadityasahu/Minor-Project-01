@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'work sans';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    /* background-color: aqua; */
+    position: relative;
+    padding-top: 0.1px;
+}
+
+#nav{
+    height: 13vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 30px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    /* background-color: blue; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: "monument"; */
+    font-size: 45px;
+    letter-spacing: -4px;
+}
+#nav h2{
+    /* background-color: blue; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 20px;
+    font-weight: 550;
+}
+#nav h2:nth-last-child(1){
+    width: 15%;
+    padding-right: 70px;
+    border-right: none;
+}
+
+#nav h2:nth-last-child(2){
+    width: 30%;
+}
+
+#nav h2:nth-last-child(4){
+    padding-left: 60px;
+}
+
+#centre{
+    height: calc(100% - 13vh);
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw 6vw;
+    position: relative;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 57%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+    color: #fff;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.1vw;
+    border-top: 1.5px solid rgba(255, 255, 255,0.9);
+
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 3.4vw;
+    font-weight: 500;
+
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#over2 img{
+    height: 4vw;
+}
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 100%;
+    border-radius: 50%;
+    width: 15%;
+    margin: 0.9vw;
+    object-fit: cover;
+    object-position: 30% 20%;
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabate{
+    height: 10vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
