@@ -134,13 +134,14 @@ html, body {
     height: 4vw;
 }
 
+#nav2{
+    background-color: #f8f8f8;
+}
 #scroll{
     height: 40vh;
     width: 100%;
-    /* background-color: red; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    /* background-color: red;
+    background-color: #f8f8f8; */
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -150,6 +151,7 @@ html, body {
     height: 100%;
     width: 100%;
     /* background-color: blue; */
+    background-color: #f8f8f8;
     display: inline-block;
     padding: 2vw;
     animation-name: anime;
@@ -179,6 +181,7 @@ html, body {
     height: 12vh;
     width: 100%;
     /* background-color: red; */
+    background-color: #f8f8f8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,6 +223,7 @@ html, body {
     justify-content: space-between;
     padding: 4vw 7vw;
     gap: 2vw;
+    background-color: #f8f8f8;
 
 }
 
@@ -279,4 +283,82 @@ html, body {
 #cnt2 h6{
     font-size: 0.9vw;
     font-weight: 450;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: centre;
+    justify-content: center;
+    padding: 3vw 7vw 5vw 8vw;
+    gap: 5vw;
+}
+#page3-part1{
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+    /* gap: 20vw; */
+}
+
+#page3-part2{
+    height: 100%;
+    width: 55%;
+    /* background-color: blue; */
+    background-image: url(./model555.avif);
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+#page3-part1 img{
+    height: 82%;
+    width: 90%;
+    object-fit: cover;
+    object-position: 50% 80%;
+    padding: 7vw 4vw 4vw 4vw;
+}
+
+#page3-part1 h5{
+    height: 18%;
+    width: 100%;
+    /* padding: 1vw 0vw 0vw 4vw; */
+    font-size: 1.8vw;
+    font-weight: 450;
+    margin-left: 3.5vw;
+}
+#page4{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding: 4vw 4vw 6vw 4vw;
+}
+
+#page4-image{
+    height: 100%;
+    width: 100%;
+}
+#page4-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 8%;
+    /* background-color: red; */
+}
+#page4-cnt{
+    position: absolute;
+    top: 12%;
+    right: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page4-cnt p{
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 1.5vw;
+    font-weight: 400;
+    padding: 0.3vw 0.6vw 0.3vw 0.6vw;
 }
