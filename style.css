@@ -9,6 +9,9 @@ html, body {
     height: 100%;
     width: 100%;
 }
+body{
+    background-color: #f8f8f8;
+}
 #main{
     height: 100%;
     width: 100%;
@@ -361,4 +364,83 @@ html, body {
     font-size: 1.5vw;
     font-weight: 400;
     padding: 0.3vw 0.6vw 0.3vw 0.6vw;
+}
+
+#page5{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page5>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    margin-bottom: 4vw;
+}
+
+.elem{
+    height: 15.8vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+    position: relative;
+    transition: all ease 0.7s;
+}
+.elem img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    left: 12%;
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+
+.elem h4{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 6%;
+    margin-bottom: 2.5vw;
+}
+
+.elem .elem-part2{
+    width: 50%;
+}
+.elem-part2 h1{
+    font-size: 2.7vw;
+    font-weight: 400;
+}
+.elem-part2 h5{
+    font-size: 1vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 0.2vw;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+
+.elem:nth-last-child(1) img{
+    left: 36%; 
+}
+.elem:nth-last-child(3) img{
+    left: 36%; 
+}
+.elem:hover{
+    background-color: #e6e6e6;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
 }
